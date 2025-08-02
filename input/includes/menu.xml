@@ -1,0 +1,7 @@
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+   <li> <a href="artifacts.html" class="dropdown-toggle">Artifacts</a></li>
+  <li> <a href="search-operation.html" class="dropdown-toggle">Search and Operations</a></li> 
+</ul>
