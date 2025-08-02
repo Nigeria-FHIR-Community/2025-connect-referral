@@ -1,4 +1,4 @@
-Profile: NgReferralCarePlan
+Profile: NgCarePlan
 Parent: CarePlan
 Id: ng-referral-careplan
 Title: "NG Referral CarePlan"
@@ -18,14 +18,14 @@ Description: "A profile for representing care plans related to MNCH referrals an
 * goal 0..*
 * activity 0..*
 * activity.detail.kind 0..1
-* activity.detail.status 0..1
+* activity.detail.status 1..1
 * activity.detail.description 0..1
 
 
 // Examples
 
-Instance: anc-referral-careplan
-InstanceOf: NgReferralCarePlan
+Instance: carePlan-001
+InstanceOf: NgCarePlan
 Title: "Example: ANC Referral Care Plan"
 Description: "Example care plan for a pregnant woman referred to secondary facility for advanced ANC services."
 Usage: #example

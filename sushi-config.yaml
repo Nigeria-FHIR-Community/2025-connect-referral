@@ -3,21 +3,21 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: 2025connectathonPrescription
+id: 2025connectathonReferral
 canonical: https://dhin.org/2025Connectathon
-name: DHIN 2025 connectathon ePrescription
-title: DHIN 2025 connectathon ePrescription testing
-description: Implementation Guide for testing ePrescription
+name: DHIN 2025 connectathon Referral
+title: DHIN 2025 connectathon Referral testing
+description: Implementation Guide for testing Referral
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
-releaseLabel: ci-build
+releaseLabel: draft
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#NG "Nigeria"  # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: https://dhin-hie.org
-  url: https://dhin-hie.org/IGs
+  name: https://www.dhin-hie.org
+  url: https://www.dhin-hie.org/IGs
   email: info@dhin-hie.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -46,8 +46,6 @@ publisher:
 pages:
   index.md:
     title: Home
-  search-operation.md:
-    title: Search and Operation
 
 
 # dependancies.md:

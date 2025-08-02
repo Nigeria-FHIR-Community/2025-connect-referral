@@ -5,7 +5,6 @@ Title: "NG CommunicationRequest"
 Description: "A profile for requesting a communication between healthcare providers, facilities, or clients in support of MNCH or other referral workflows."
 
 * status 1..1 MS
-* intent 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * requester 0..1
@@ -20,14 +19,13 @@ Description: "A profile for requesting a communication between healthcare provid
 * occurrenceDateTime 0..1
 
 
-Instance: anc-referral-communicationrequest
+Instance: communicationrequest-001
 InstanceOf: NgCommunicationRequest
 Title: "Example: ANC Referral CommunicationRequest"
 Description: "A communication request from a primary care provider to a secondary facility for a referral follow-up."
 Usage: #example
 
 * status = #active
-* intent = #order
 * subject.reference = "NgPatient/patient-mnch-0010"
 * requester.reference = "NgPractitioner/practitioner-0120"
 * recipient[0].reference = "NgOrganization/secondary-facility"

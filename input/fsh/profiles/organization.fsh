@@ -61,3 +61,45 @@ Usage: #example
 * address[0].city = "Lagos"
 * address[0].district = #ikeja
 * address[0].state = "Lagos"
+
+
+Instance: organization-sender
+InstanceOf: NgOrganization
+Title: "Example: Lagos University Teaching Hospital"
+Description: "A tertiary-level teaching hospital in Lagos."
+Usage: #example
+
+* identifier[0].system = "https://fmoh.gov.ng"
+* identifier[0].value = "LUTH001"
+* active = true
+* name = "Lagos University Teaching Hospital"
+* type[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/organization-type"
+* type[0].coding[0].code = #prov
+* type[0].coding[0].display = "Healthcare Provider"
+* telecom[0].system = #phone
+* telecom[0].value = "+234-8030000001"
+* address[0].line = "Idi-Araba, Surulere"
+* address[0].city = "Lagos"
+* address[0].district = #surulere
+* address[0].state = #lagos
+
+
+Instance: organization-receiver
+InstanceOf: NgOrganization
+Title: "Example: TrustHMO"
+Description: "A national HMO licensed under NHIA."
+Usage: #example
+
+* identifier[0].system = "https://nhia.gov.ng"
+* identifier[0].value = "TRUSTHMO2025"
+* active = true
+* name = "TrustHMO Limited"
+* type[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/organization-type"
+* type[0].coding[0].code = #pay
+* type[0].coding[0].display = "Payer"
+* telecom[0].system = #email
+* telecom[0].value = "info@trusthmo.ng"
+* address[0].line = "15 Surulere Street"
+* address[0].city = "Abuja"
+* address[0].district = #amac
+* address[0].state = #fct

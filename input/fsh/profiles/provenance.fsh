@@ -13,7 +13,7 @@ Description: "A profile for capturing metadata about creation or modification of
 * activity 0..1
 * location 0..1
 
-Instance: provenance-0011
+Instance: provenance-001
 InstanceOf: NgProvenance
 Title: "Example: Provenance of ePrescription"
 Description: "An example of provenance capturing the author and timestamp of a prescription."

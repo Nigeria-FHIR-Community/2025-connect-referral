@@ -24,7 +24,7 @@ Description: "An Observation profile used during MNCH referral workflows for cap
 
 
 // Example
-Instance: referral-bp-observation
+Instance: observation-001
 InstanceOf: NgReferralObservation
 Title: "Example: Blood Pressure Observation during MNCH Referral"
 Description: "Example observation of systolic and diastolic blood pressure for a patient referred during ANC visit."
@@ -41,7 +41,7 @@ Usage: #example
 * valueQuantity.value = 125
 * valueQuantity.unit = "mmHg"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.code = "mm[Hg]"
+* valueQuantity.code = #mm[Hg]
 * performer[0].reference = "Practitioner/practitioner-012"
 * interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
 * interpretation.coding[0].code = #H

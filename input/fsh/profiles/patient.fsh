@@ -63,18 +63,7 @@ Description: "Nigeria Patient Profile"
 * communication 0..*
 * communication.language from NGLanguagesVS (extensible)
 * communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
-* photo 0..* MS
-* photo ^short = "Image of the patient"
-* photo.data 0..1
-* photo.data ^short = "Base64 encoded image data"
-* photo.title 0..1
-* photo.title ^short = "The label of the image"
-* photo.url 0..1
-* photo.url ^short = "Public URL or internal endpoint to the patient's photo"
-* photo.size 0..1
-* photo.size ^short = "The size of the image in mega bytes MB"
-* photo.contentType 0..1
-* photo.contentType ^short = "Type of image (e.g., image/jpeg)"
+
 
 
 
@@ -121,7 +110,3 @@ Usage: #example
 * communication[0].language.coding[0].system = "urn:ietf:bcp:47"
 * communication[0].language.coding[0].code = #ig
 * communication[0].language.coding[0].display = "Igbo"
-* photo[0].url = "https://example.org/patient-photos/chinedu-okoro.jpg"
-* photo[0].title = "Chinedu Okoro profile photo"
-* photo[0].contentType = #image/jpeg
-* photo[0].size = 245600

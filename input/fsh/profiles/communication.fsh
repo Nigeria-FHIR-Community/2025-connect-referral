@@ -13,16 +13,16 @@ Description: "A profile for recording formal communication exchanges such as not
 * medium 0..*
 * payload 0..* MS
 
-Instance: example-communication
+Instance: communication-001
 InstanceOf: NgCommunication
 Title: "Example: Communication from Pharmacy to Prescriber"
 Description: "An example communication sent from a pharmacist to a doctor requesting clarification on a prescription."
 Usage: #example
 
 * status = #completed
-* subject.reference = "NgPatient/patient-001"
-* recipient[0].reference = "Practitioner/practitioner-001"
-* sender.reference = "NgPractitioner/pharmacist-001"
+* subject.reference = "patient-001"
+* recipient[0].reference = "practitioner-001"
+* sender.reference = "pharmacist-001"
 * sent = "2025-08-05T11:00:00+01:00"
 * received = "2025-08-05T11:03:00+01:00"
 * medium[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"
