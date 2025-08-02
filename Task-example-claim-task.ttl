@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Task/example-claim-task> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-claim-task"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task example-claim-task</b></p><a name=\"example-claim-task\"> </a><a name=\"hcexample-claim-task\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-task.html\">NG Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:\">Dispense prescribed medication</span></p><p><b>description</b>: Pharmacist to dispense Amoxicillin 250mg for 7 days as prescribed</p><p><b>for</b>: <a href=\"MedicationRequest/example-medication-request\">MedicationRequest/example-medication-request</a></p><p><b>executionPeriod</b>: 2025-08-05 09:30:00+0100 --&gt; (ongoing)</p><p><b>requester</b>: <a href=\"Organization/org-hospital\">Organization/org-hospital</a></p><p><b>owner</b>: <a href=\"Practitioner/pharmacist-001\">Practitioner/pharmacist-001</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Dispense prescribed medication" ]
+  ] ; # 
+  fhir:description [ fhir:v "Pharmacist to dispense Amoxicillin 250mg for 7 days as prescribed"] ; # 
+  fhir:for [
+     fhir:link <https://dhin.org/2025Connectathon/MedicationRequest/example-medication-request> ;
+     fhir:reference [ fhir:v "MedicationRequest/example-medication-request" ]
+  ] ; # 
+  fhir:executionPeriod [
+     fhir:start [ fhir:v "2025-08-05T09:30:00+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <https://dhin.org/2025Connectathon/Organization/org-hospital> ;
+     fhir:reference [ fhir:v "Organization/org-hospital" ]
+  ] ; # 
+  fhir:owner [
+     fhir:link <https://dhin.org/2025Connectathon/Practitioner/pharmacist-001> ;
+     fhir:reference [ fhir:v "Practitioner/pharmacist-001" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

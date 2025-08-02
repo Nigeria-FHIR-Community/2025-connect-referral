@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Organization/organization-receiver> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-receiver"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization organization-receiver</b></p><a name=\"organization-receiver\"> </a><a name=\"hcorganization-receiver\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/TRUSTHMO2025</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type pay}\">Payer</span></p><p><b>name</b>: TrustHMO Limited</p><p><b>telecom</b>: <a href=\"mailto:info@trusthmo.ng\">info@trusthmo.ng</a></p><p><b>address</b>: 15 Surulere Street Abuja fct </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nhia.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "TRUSTHMO2025" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "pay" ] ;
+       fhir:display [ fhir:v "Payer" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "TrustHMO Limited"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "info@trusthmo.ng" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "15 Surulere Street" ] ) ;
+     fhir:city [ fhir:v "Abuja" ] ;
+     fhir:district [ fhir:v "amac" ] ;
+     fhir:state [ fhir:v "fct" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

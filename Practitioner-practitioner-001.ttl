@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Practitioner/practitioner-001> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-001</b></p><a name=\"practitioner-001\"> </a><a name=\"hcpractitioner-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPractitioner.html\">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN-457812</p><p><b>active</b>: true</p><p><b>name</b>: Chinelo Okoye </p><p><b>telecom</b>: ph: 08011223344</p><p><b>birthDate</b>: 1982-03-10</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">MEDCERT-2023</span></td><td>2023-01-01 --&gt; 2028-12-31</td><td><a href=\"Organization-organization-001.html\">Organization Sunlight Medical Center</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://mdcn.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MDCN-457812" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Okoye" ] ;
+     fhir:given ( [ fhir:v "Chinelo" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "08011223344" ]
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1982-03-10"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:text [ fhir:v "MEDCERT-2023" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2023-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2028-12-31"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <https://dhin.org/2025Connectathon/Organization/organization-001> ;
+       fhir:reference [ fhir:v "Organization/organization-001" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

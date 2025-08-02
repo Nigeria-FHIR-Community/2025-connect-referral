@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Provenance/provenance-001> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "provenance-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-provenance"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-provenance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance provenance-001</b></p><a name=\"provenance-001\"> </a><a name=\"hcprovenance-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-provenance.html\">NG Provenance</a></p></div><p>Provenance for <code>NgMedicationRequest/example-medication-request</code></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-08-05 08:45:00+0100</td></tr><tr><td>Location</td><td><code>NgLocation/example-location</code></td></tr><tr><td>Activity</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"Practitioner-practitioner-001.html\">Practitioner Chinelo Okoye </a></td><td><a href=\"Organization/org-hospital\">Organization/org-hospital</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:link <https://dhin.org/2025Connectathon/NgMedicationRequest/example-medication-request> ;
+     fhir:reference [ fhir:v "NgMedicationRequest/example-medication-request" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2025-08-05T08:45:00+01:00"^^xsd:dateTime] ; # 
+  fhir:location [
+     fhir:link <https://dhin.org/2025Connectathon/NgLocation/example-location> ;
+     fhir:reference [ fhir:v "NgLocation/example-location" ]
+  ] ; # 
+  fhir:activity [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-DataOperation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CREATE" ] ;
+       fhir:display [ fhir:v "create" ]
+     ] )
+  ] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "author" ] ;
+         fhir:display [ fhir:v "Author" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <https://dhin.org/2025Connectathon/Practitioner/practitioner-001> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-001" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <https://dhin.org/2025Connectathon/Organization/org-hospital> ;
+       fhir:reference [ fhir:v "Organization/org-hospital" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

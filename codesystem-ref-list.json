@@ -1,0 +1,81 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGFacilityTypeCS",
+      "title" : "NG-Imm Facility Type CS",
+      "description" : "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role.",
+      "uses" : {
+      },
+      "ValueSet-nigeria-facility-types.html" : "NG-Imm HealthFacility Type VS"
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGGenderCS",
+      "title" : "NG-Imm Gender CS",
+      "description" : "The administrative gender of a person.",
+      "uses" : {
+      },
+      "ValueSet-nigeria-gender.html" : "NG-Imm Gender or Sex VS"
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGLanguagesCS",
+      "title" : "NG‑Imm Languages in Nigeria CS",
+      "description" : "This CodeSystem defines codes for major languages spoken across Nigeria.",
+      "uses" : {
+      },
+      "ValueSet-nigeria-languages.html" : "NG-Imm Languages VS"
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGLGAsCS",
+      "title" : "NG-Imm LGAs in Nigeria CS",
+      "description" : "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria.",
+      "uses" : {
+      },
+      "ValueSet-nigeria-lgas.html" : "NG-Imm LGAs VS"
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "NGOrganizationOwnerCS",
+      "title" : "NG-Imm Location Owner CS",
+      "description" : "This CodeSystem defines Immunization Location Owner.",
+      "uses" : {
+      },
+      "ValueSet-nigeria-location-owner.html" : "NG-Imm Location Owner"
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-states",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGStatesCS",
+      "title" : "NG-Imm States in Nigeria CS",
+      "description" : "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria.",
+      "uses" : {
+      },
+      "ValueSet-nigeria-states.html" : "NG-Imm States VS"
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGWardsCS",
+      "title" : "NG-Imm Administrative Wards CS",
+      "description" : "This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria.",
+      "uses" : {
+      },
+      "ValueSet-nigeria-wards.html" : "NG-Imm Wards VS"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="communication-001"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-communication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Communication communication-001</b></p><a name="communication-001"> </a><a name="hccommunication-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-communication.html">NG Communication</a></p></div><p><b>status</b>: Completed</p><p><b>medium</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationMode WRITTEN}">written</span></p><p><b>subject</b>: <code>patient-001</code></p><p><b>sent</b>: 2025-08-05 11:00:00+0100</p><p><b>received</b>: 2025-08-05 11:03:00+0100</p><p><b>recipient</b>: <code>practitioner-001</code></p><p><b>sender</b>: <code>pharmacist-001</code></p><h3>Payloads</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Content[x]</b></td></tr><tr><td style="display: none">*</td><td>Kindly confirm dosage frequency for Amoxicillin prescription before dispensing.</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <medium>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"/>
+      <code value="WRITTEN"/>
+      <display value="written"/>
+    </coding>
+  </medium>
+  <subject>
+    <reference value="patient-001"/>
+  </subject>
+  <sent value="2025-08-05T11:00:00+01:00"/>
+  <received value="2025-08-05T11:03:00+01:00"/>
+  <recipient>
+    <reference value="practitioner-001"/>
+  </recipient>
+  <sender>
+    <reference value="pharmacist-001"/>
+  </sender>
+  <payload>
+    <contentString value="Kindly confirm dosage frequency for Amoxicillin prescription before dispensing."/>
+  </payload>
+</Communication>

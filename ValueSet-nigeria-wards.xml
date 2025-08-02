@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nigeria-wards"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet nigeria-wards</b></p><a name="nigeria-wards"> </a><a name="hcnigeria-wards"> </a><ul><li>Include all codes defined in <a href="CodeSystem-nigeria-wards.html"><code>https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards</code></a></li></ul></div>
+  </text>
+  <url value="https://dhin.org/2025Connectathon/ValueSet/nigeria-wards"/>
+  <version value="0.1.0"/>
+  <name value="NGWardsVS"/>
+  <title value="NG-Imm Wards VS"/>
+  <status value="active"/>
+  <date value="2025-08-02T13:44:47+01:00"/>
+  <publisher value="https://www.dhin-hie.org"/>
+  <contact>
+    <name value="https://www.dhin-hie.org"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.dhin-hie.org/IGs"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@dhin-hie.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Digital Health Interoperability Network (DHIN)."/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@dhin-hie.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The administrative Ward (within an LGA) where a person or a facility is."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nigeria-states",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-states</b></p><a name=\"nigeria-states\"> </a><a name=\"hcnigeria-states\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-states.html\"><code>https://dhin.org/2025Connectathon/CodeSystem/nigeria-states</code></a></li></ul></div>"
+  },
+  "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-states",
+  "version" : "0.1.0",
+  "name" : "NGStatesVS",
+  "title" : "NG-Imm States VS",
+  "status" : "active",
+  "date" : "2025-08-02T13:44:47+01:00",
+  "publisher" : "https://www.dhin-hie.org",
+  "contact" : [{
+    "name" : "https://www.dhin-hie.org",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.dhin-hie.org/IGs"
+    },
+    {
+      "system" : "email",
+      "value" : "info@dhin-hie.org"
+    }]
+  },
+  {
+    "name" : "Digital Health Interoperability Network (DHIN).",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@dhin-hie.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The state where a person or a facility is.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-states"
+    }]
+  }
+}

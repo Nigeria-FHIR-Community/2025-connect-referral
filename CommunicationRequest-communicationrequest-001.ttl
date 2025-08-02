@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/CommunicationRequest/communicationrequest-001> a fhir:CommunicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "communicationrequest-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-communication-request"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-communication-request>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest communicationrequest-001</b></p><a name=\"communicationrequest-001\"> </a><a name=\"hccommunicationrequest-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-communication-request.html\">NG CommunicationRequest</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <code>NgPatient/patient-mnch-0010</code></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Please receive the patient for further monitoring and specialist care due to hypertension in pregnancy.</td></tr></table><p><b>occurrence</b>: 2025-08-02 09:00:00+0100</p><p><b>authoredOn</b>: 2025-08-01</p><p><b>requester</b>: <code>NgPractitioner/practitioner-0120</code></p><p><b>recipient</b>: <code>NgOrganization/secondary-facility</code></p><p><b>reasonCode</b>: <span title=\"Codes:\">Referral for management of high-risk pregnancy</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/NgPatient/patient-mnch-0010> ;
+     fhir:reference [ fhir:v "NgPatient/patient-mnch-0010" ]
+  ] ; # 
+  fhir:payload ( [
+     fhir:content [
+       a fhir:string ;
+       fhir:v "Please receive the patient for further monitoring and specialist care due to hypertension in pregnancy."
+     ]
+  ] ) ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-08-02T09:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-08-01"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://dhin.org/2025Connectathon/NgPractitioner/practitioner-0120> ;
+     fhir:reference [ fhir:v "NgPractitioner/practitioner-0120" ]
+  ] ; # 
+  fhir:recipient ( [
+     fhir:link <https://dhin.org/2025Connectathon/NgOrganization/secondary-facility> ;
+     fhir:reference [ fhir:v "NgOrganization/secondary-facility" ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "Referral for management of high-risk pregnancy" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

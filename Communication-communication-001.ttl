@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Communication/communication-001> a fhir:Communication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "communication-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-communication"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-communication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Communication communication-001</b></p><a name=\"communication-001\"> </a><a name=\"hccommunication-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-communication.html\">NG Communication</a></p></div><p><b>status</b>: Completed</p><p><b>medium</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationMode WRITTEN}\">written</span></p><p><b>subject</b>: <code>patient-001</code></p><p><b>sent</b>: 2025-08-05 11:00:00+0100</p><p><b>received</b>: 2025-08-05 11:03:00+0100</p><p><b>recipient</b>: <code>practitioner-001</code></p><p><b>sender</b>: <code>pharmacist-001</code></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Kindly confirm dosage frequency for Amoxicillin prescription before dispensing.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medium ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "WRITTEN" ] ;
+       fhir:display [ fhir:v "written" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "patient-001" ]
+  ] ; # 
+  fhir:sent [ fhir:v "2025-08-05T11:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:received [ fhir:v "2025-08-05T11:03:00+01:00"^^xsd:dateTime] ; # 
+  fhir:recipient ( [
+     fhir:reference [ fhir:v "practitioner-001" ]
+  ] ) ; # 
+  fhir:sender [
+     fhir:reference [ fhir:v "pharmacist-001" ]
+  ] ; # 
+  fhir:payload ( [
+     fhir:content [
+       a fhir:string ;
+       fhir:v "Kindly confirm dosage frequency for Amoxicillin prescription before dispensing."
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

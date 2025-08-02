@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Condition",
+  "id" : "condition-001",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-condition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-001</b></p><a name=\"condition-001\"> </a><a name=\"hccondition-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-condition.html\">NG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 65363002}\">Otitis media</span></p><p><b>subject</b>: <code>NgPatient/patient-0011</code></p><p><b>onset</b>: 2025-08-04</p><p><b>recordedDate</b>: 2025-08-04</p><p><b>recorder</b>: <code>NgPractitioner/practitioner-0011</code></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "65363002",
+      "display" : "Otitis media"
+    }]
+  },
+  "subject" : {
+    "reference" : "NgPatient/patient-0011"
+  },
+  "onsetDateTime" : "2025-08-04",
+  "recordedDate" : "2025-08-04",
+  "recorder" : {
+    "reference" : "NgPractitioner/practitioner-0011"
+  }
+}

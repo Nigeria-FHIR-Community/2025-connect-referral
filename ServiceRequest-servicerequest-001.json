@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "servicerequest-001",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-servicerequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-001</b></p><a name=\"servicerequest-001\"> </a><a name=\"hcservicerequest-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-servicerequest.html\">NG ServiceRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 734163000}\">Referral to obstetrician</span></p><p><b>subject</b>: <a href=\"Patient-patient-001.html\">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-001.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-08-04 09:00:00+0100 --&gt; 2025-08-04 09:20:00+0100; reasonCode = Otitis media</a></p><p><b>authoredOn</b>: 2025-08-01</p><p><b>requester</b>: <a href=\"Practitioner-practitioner-001.html\">Practitioner Chinelo Okoye </a></p><p><b>reasonCode</b>: <span title=\"Codes:\">High blood pressure in pregnancy</span></p><p><b>supportingInfo</b>: <a href=\"Observation-observation-001.html\">Observation Blood pressure panel with all children optional</a></p></div>"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "734163000",
+      "display" : "Referral to obstetrician"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-001"
+  },
+  "encounter" : {
+    "reference" : "Encounter/encounter-001"
+  },
+  "authoredOn" : "2025-08-01",
+  "requester" : {
+    "reference" : "Practitioner/practitioner-001"
+  },
+  "reasonCode" : [{
+    "text" : "High blood pressure in pregnancy"
+  }],
+  "supportingInfo" : [{
+    "reference" : "Observation/observation-001"
+  }]
+}

@@ -1,0 +1,465 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Bundle/referral-tracking-bundle-001> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "referral-tracking-bundle-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-referral-tracking"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-referral-tracking>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:patient-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:patient-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:servicerequest-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:servicerequest-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:communication-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:communication-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:careplan-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:careplan-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:condition-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:condition-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:observation-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:observation-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:encounter-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:encounter-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:organization-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:organization-001> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:practitioner-001"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:practitioner-001> )
+  ] ) . # 
+
+<urn:uuid:patient-001> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-001"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2025-07-30T10:20:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-001</b></p><a name=\"patient-001\"> </a><a name=\"hcpatient-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-07-30 10:20:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPatient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">23 Market Road Nsukka Enugu </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Language spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes:{urn:ietf:bcp:47 ig}\">Igbo</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact:</td><td colspan=\"3\"><ul><li>Ngozi Okoro </li><li>23 Market Road Nsukka Enugu </li><li><a href=\"tel:+2348123456789\">+2348123456789</a></li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nimc.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NIN123456789" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Okoro" ] ;
+     fhir:given ( [ fhir:v "Chinedu" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1990-06-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "23 Market Road" ] ) ;
+     fhir:city [ fhir:v "Nsukka" ] ;
+     fhir:district [ fhir:v "nsukka" ] ;
+     fhir:state [ fhir:v "Enugu" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:name [
+       fhir:family [ fhir:v "Okoro" ] ;
+       fhir:given ( [ fhir:v "Ngozi" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+2348123456789" ]
+     ] ) ;
+     fhir:address [
+       fhir:line ( [ fhir:v "23 Market Road" ] ) ;
+       fhir:city [ fhir:v "Nsukka" ] ;
+       fhir:district [ fhir:v "nsukka" ] ;
+       fhir:state [ fhir:v "Enugu" ]
+     ]
+  ] ) ; # 
+  fhir:communication ( [
+     fhir:language [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ig" ] ;
+         fhir:display [ fhir:v "Igbo" ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:servicerequest-001> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "servicerequest-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-servicerequest"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-servicerequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_servicerequest-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest servicerequest-001</b></p><a name=\"servicerequest-001\"> </a><a name=\"hcservicerequest-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-servicerequest.html\">NG ServiceRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 734163000}\">Referral to obstetrician</span></p><p><b>subject</b>: <a href=\"Patient-patient-001.html\">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</a></p><p><b>encounter</b>: <a href=\"Encounter-encounter-001.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); period = 2025-08-04 09:00:00+0100 --&gt; 2025-08-04 09:20:00+0100; reasonCode = Otitis media</a></p><p><b>authoredOn</b>: 2025-08-01</p><p><b>requester</b>: <a href=\"Practitioner-practitioner-001.html\">Practitioner Chinelo Okoye </a></p><p><b>reasonCode</b>: <span title=\"Codes:\">High blood pressure in pregnancy</span></p><p><b>supportingInfo</b>: <a href=\"Observation-observation-001.html\">Observation Blood pressure panel with all children optional</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:734163000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "734163000" ] ;
+       fhir:display [ fhir:v "Referral to obstetrician" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/Patient/patient-001> ;
+     fhir:reference [ fhir:v "Patient/patient-001" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <https://dhin.org/2025Connectathon/Encounter/encounter-001> ;
+     fhir:reference [ fhir:v "Encounter/encounter-001" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-08-01"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://dhin.org/2025Connectathon/Practitioner/practitioner-001> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-001" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "High blood pressure in pregnancy" ]
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:link <https://dhin.org/2025Connectathon/Observation/observation-001> ;
+     fhir:reference [ fhir:v "Observation/observation-001" ]
+  ] ) . # 
+
+<urn:uuid:communication-001> a fhir:Communication ;
+  fhir:id [ fhir:v "communication-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-communication"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-communication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Communication_communication-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Communication communication-001</b></p><a name=\"communication-001\"> </a><a name=\"hccommunication-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-communication.html\">NG Communication</a></p></div><p><b>status</b>: Completed</p><p><b>medium</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationMode WRITTEN}\">written</span></p><p><b>subject</b>: <code>patient-001</code></p><p><b>sent</b>: 2025-08-05 11:00:00+0100</p><p><b>received</b>: 2025-08-05 11:03:00+0100</p><p><b>recipient</b>: <code>practitioner-001</code></p><p><b>sender</b>: <code>pharmacist-001</code></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Kindly confirm dosage frequency for Amoxicillin prescription before dispensing.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medium ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "WRITTEN" ] ;
+       fhir:display [ fhir:v "written" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "patient-001" ]
+  ] ; # 
+  fhir:sent [ fhir:v "2025-08-05T11:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:received [ fhir:v "2025-08-05T11:03:00+01:00"^^xsd:dateTime] ; # 
+  fhir:recipient ( [
+     fhir:reference [ fhir:v "practitioner-001" ]
+  ] ) ; # 
+  fhir:sender [
+     fhir:reference [ fhir:v "pharmacist-001" ]
+  ] ; # 
+  fhir:payload ( [
+     fhir:content [
+       a fhir:string ;
+       fhir:v "Kindly confirm dosage frequency for Amoxicillin prescription before dispensing."
+     ]
+  ] ) . # 
+
+<urn:uuid:careplan-001> a fhir:CarePlan ;
+  fhir:id [ fhir:v "carePlan-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-careplan"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-careplan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_carePlan-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan carePlan-001</b></p><a name=\"carePlan-001\"> </a><a name=\"hccarePlan-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-referral-careplan.html\">NG Referral CarePlan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/care-plan-category assess-plan}\">assess-plan</span></p><p><b>title</b>: Referral for High-Risk ANC Monitoring</p><p><b>description</b>: This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria.</p><p><b>subject</b>: <code>NgPatient/patient-mnch-001</code></p><p><b>period</b>: 2025-08-01 --&gt; 2025-09-15</p><p><b>created</b>: 2025-08-01</p><p><b>author</b>: <code>NgPractitioner/practitioner-012</code></p><p><b>goal</b>: <a href=\"Goal/anc-bp-goal\">Goal/anc-bp-goal</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Appointment</td><td>Scheduled</td><td>Follow-up appointment with obstetrician at secondary facility on 2025-08-05</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>ServiceRequest</td><td>Not Started</td><td>Request for renal function test and repeat urine protein analysis</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/care-plan-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "assess-plan" ]
+     ] )
+  ] ) ; # 
+  fhir:title [ fhir:v "Referral for High-Risk ANC Monitoring"] ; # 
+  fhir:description [ fhir:v "This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria."] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/NgPatient/patient-mnch-001> ;
+     fhir:reference [ fhir:v "NgPatient/patient-mnch-001" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-08-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-09-15"^^xsd:date ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-08-01"^^xsd:date] ; # 
+  fhir:author [
+     fhir:link <https://dhin.org/2025Connectathon/NgPractitioner/practitioner-012> ;
+     fhir:reference [ fhir:v "NgPractitioner/practitioner-012" ]
+  ] ; # 
+  fhir:goal ( [
+     fhir:link <https://dhin.org/2025Connectathon/Goal/anc-bp-goal> ;
+     fhir:reference [ fhir:v "Goal/anc-bp-goal" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:status [ fhir:v "scheduled" ] ;
+       fhir:description [ fhir:v "Follow-up appointment with obstetrician at secondary facility on 2025-08-05" ]
+     ]
+  ] [
+     fhir:detail [
+       fhir:kind [ fhir:v "ServiceRequest" ] ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:description [ fhir:v "Request for renal function test and repeat urine protein analysis" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:condition-001> a fhir:Condition ;
+  fhir:id [ fhir:v "condition-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-condition"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_condition-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition condition-001</b></p><a name=\"condition-001\"> </a><a name=\"hccondition-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-condition.html\">NG Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 65363002}\">Otitis media</span></p><p><b>subject</b>: <code>NgPatient/patient-0011</code></p><p><b>onset</b>: 2025-08-04</p><p><b>recordedDate</b>: 2025-08-04</p><p><b>recorder</b>: <code>NgPractitioner/practitioner-0011</code></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:65363002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65363002" ] ;
+       fhir:display [ fhir:v "Otitis media" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/NgPatient/patient-0011> ;
+     fhir:reference [ fhir:v "NgPatient/patient-0011" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2025-08-04"^^xsd:date
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2025-08-04"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:link <https://dhin.org/2025Connectathon/NgPractitioner/practitioner-0011> ;
+     fhir:reference [ fhir:v "NgPractitioner/practitioner-0011" ]
+  ] . # 
+
+<urn:uuid:observation-001> a fhir:Observation ;
+  fhir:id [ fhir:v "observation-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-observation"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-001</b></p><a name=\"observation-001\"> </a><a name=\"hcobservation-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-referral-observation.html\">NG Referral Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <code>NgPatient/patient-mnch-001</code></p><p><b>effective</b>: 2025-08-02 09:30:00+0100</p><p><b>performer</b>: <a href=\"Practitioner/practitioner-012\">Practitioner/practitioner-012</a></p><p><b>value</b>: 125 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}\">High</span></p><p><b>note</b>: </p><blockquote><div><p>Elevated BP noted. Referral to hospital initiated.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/NgPatient/patient-mnch-001> ;
+     fhir:reference [ fhir:v "NgPatient/patient-mnch-001" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-08-02T09:30:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <https://dhin.org/2025Connectathon/Practitioner/practitioner-012> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-012" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "125"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mmHg" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mm[Hg]" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "H" ] ;
+       fhir:display [ fhir:v "High" ]
+     ] )
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Elevated BP noted. Referral to hospital initiated." ]
+  ] ) . # 
+
+<urn:uuid:encounter-001> a fhir:Encounter ;
+  fhir:id [ fhir:v "encounter-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-prescription-encounter"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-prescription-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-001</b></p><a name=\"encounter-001\"> </a><a name=\"hcencounter-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-prescription-encounter.html\">NG Encounter</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>subject</b>: <a href=\"Patient-patient-001.html\">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</a></p><p><b>period</b>: 2025-08-04 09:00:00+0100 --&gt; 2025-08-04 09:20:00+0100</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 65363002}\">Otitis media</span></p><p><b>serviceProvider</b>: <code>NgOrganization/org-hospital</code></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/Patient/patient-001> ;
+     fhir:reference [ fhir:v "Patient/patient-001" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-08-04T09:00:00+01:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-08-04T09:20:00+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:65363002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65363002" ] ;
+       fhir:display [ fhir:v "Otitis media" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://dhin.org/2025Connectathon/NgOrganization/org-hospital> ;
+     fhir:reference [ fhir:v "NgOrganization/org-hospital" ]
+  ] . # 
+
+<urn:uuid:organization-001> a fhir:Organization ;
+  fhir:id [ fhir:v "organization-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization organization-001</b></p><a name=\"organization-001\"> </a><a name=\"hcorganization-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF-0001</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Sunlight Medical Center</p><p><b>telecom</b>: <a href=\"tel:+2348012345678\">+2348012345678</a></p><p><b>address</b>: 12 Ikoyi Crescent Lagos Lagos </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://herfama.lagos.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HF-0001" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "prov" ] ;
+       fhir:display [ fhir:v "Healthcare Provider" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Sunlight Medical Center"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+2348012345678" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "12 Ikoyi Crescent" ] ) ;
+     fhir:city [ fhir:v "Lagos" ] ;
+     fhir:district [ fhir:v "ikeja" ] ;
+     fhir:state [ fhir:v "Lagos" ]
+  ] ) . # 
+
+<urn:uuid:practitioner-001> a fhir:Practitioner ;
+  fhir:id [ fhir:v "practitioner-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitioner-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-001</b></p><a name=\"practitioner-001\"> </a><a name=\"hcpractitioner-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPractitioner.html\">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN-457812</p><p><b>active</b>: true</p><p><b>name</b>: Chinelo Okoye </p><p><b>telecom</b>: ph: 08011223344</p><p><b>birthDate</b>: 1982-03-10</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">MEDCERT-2023</span></td><td>2023-01-01 --&gt; 2028-12-31</td><td><a href=\"Organization-organization-001.html\">Organization Sunlight Medical Center</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://mdcn.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MDCN-457812" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Okoye" ] ;
+     fhir:given ( [ fhir:v "Chinelo" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "08011223344" ]
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1982-03-10"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:text [ fhir:v "MEDCERT-2023" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2023-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2028-12-31"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <https://dhin.org/2025Connectathon/Organization/organization-001> ;
+       fhir:reference [ fhir:v "Organization/organization-001" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

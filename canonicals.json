@@ -1,0 +1,233 @@
+[
+  {
+    "id" : "nigeria-facility-type",
+    "type" : "CodeSystem",
+    "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type",
+    "version" : "0.1.0",
+    "name" : "NGFacilityTypeCS"
+  },
+  {
+    "id" : "nigeria-gender",
+    "type" : "CodeSystem",
+    "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender",
+    "version" : "0.1.0",
+    "name" : "NGGenderCS"
+  },
+  {
+    "id" : "nigeria-languages",
+    "type" : "CodeSystem",
+    "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages",
+    "version" : "0.1.0",
+    "name" : "NGLanguagesCS"
+  },
+  {
+    "id" : "nigeria-lgas",
+    "type" : "CodeSystem",
+    "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas",
+    "version" : "0.1.0",
+    "name" : "NGLGAsCS"
+  },
+  {
+    "id" : "nigeria-location-owner-cs",
+    "type" : "CodeSystem",
+    "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs",
+    "version" : "0.1.0",
+    "name" : "NGOrganizationOwnerCS"
+  },
+  {
+    "id" : "nigeria-states",
+    "type" : "CodeSystem",
+    "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-states",
+    "version" : "0.1.0",
+    "name" : "NGStatesCS"
+  },
+  {
+    "id" : "nigeria-wards",
+    "type" : "CodeSystem",
+    "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards",
+    "version" : "0.1.0",
+    "name" : "NGWardsCS"
+  },
+  {
+    "id" : "2025connectathonReferral",
+    "type" : "ImplementationGuide",
+    "url" : "https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonReferral",
+    "version" : "0.1.0",
+    "name" : "DHIN2025connectathonReferral"
+  },
+  {
+    "id" : "NgPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient",
+    "version" : "0.1.0",
+    "name" : "NgPatient"
+  },
+  {
+    "id" : "NgPractitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner",
+    "version" : "0.1.0",
+    "name" : "NgPractitioner"
+  },
+  {
+    "id" : "ng-audit-event",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-audit-event",
+    "version" : "0.1.0",
+    "name" : "NgAuditEvent"
+  },
+  {
+    "id" : "ng-bundle-referral-communication",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-referral-communication",
+    "version" : "0.1.0",
+    "name" : "NgBundleReferralCommunication"
+  },
+  {
+    "id" : "ng-bundle-referral-initiation",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-referral-initiation",
+    "version" : "0.1.0",
+    "name" : "NgBundleReferralInitiation"
+  },
+  {
+    "id" : "ng-bundle-referral-response",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-referral-response",
+    "version" : "0.1.0",
+    "name" : "NgBundleReferralResponse"
+  },
+  {
+    "id" : "ng-bundle-referral-tracking",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-referral-tracking",
+    "version" : "0.1.0",
+    "name" : "NgBundleReferralTracking"
+  },
+  {
+    "id" : "ng-claim-task",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task",
+    "version" : "0.1.0",
+    "name" : "NgTask"
+  },
+  {
+    "id" : "ng-communication",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-communication",
+    "version" : "0.1.0",
+    "name" : "NgCommunication"
+  },
+  {
+    "id" : "ng-communication-request",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-communication-request",
+    "version" : "0.1.0",
+    "name" : "NgCommunicationRequest"
+  },
+  {
+    "id" : "ng-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-condition",
+    "version" : "0.1.0",
+    "name" : "NgCondition"
+  },
+  {
+    "id" : "ng-imm-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization",
+    "version" : "0.1.0",
+    "name" : "NgOrganization"
+  },
+  {
+    "id" : "ng-location",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-location",
+    "version" : "0.1.0",
+    "name" : "NgLocation"
+  },
+  {
+    "id" : "ng-prescription-encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-prescription-encounter",
+    "version" : "0.1.0",
+    "name" : "NgEncounter"
+  },
+  {
+    "id" : "ng-provenance",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-provenance",
+    "version" : "0.1.0",
+    "name" : "NgProvenance"
+  },
+  {
+    "id" : "ng-referral-careplan",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-careplan",
+    "version" : "0.1.0",
+    "name" : "NgCarePlan"
+  },
+  {
+    "id" : "ng-referral-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-observation",
+    "version" : "0.1.0",
+    "name" : "NgReferralObservation"
+  },
+  {
+    "id" : "ng-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-servicerequest",
+    "version" : "0.1.0",
+    "name" : "NgServiceRequest"
+  },
+  {
+    "id" : "nigeria-facility-types",
+    "type" : "ValueSet",
+    "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types",
+    "version" : "0.1.0",
+    "name" : "NGFacilityTypeVS"
+  },
+  {
+    "id" : "nigeria-gender",
+    "type" : "ValueSet",
+    "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-gender",
+    "version" : "0.1.0",
+    "name" : "NGGenderVS"
+  },
+  {
+    "id" : "nigeria-languages",
+    "type" : "ValueSet",
+    "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-languages",
+    "version" : "0.1.0",
+    "name" : "NGLanguagesVS"
+  },
+  {
+    "id" : "nigeria-lgas",
+    "type" : "ValueSet",
+    "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas",
+    "version" : "0.1.0",
+    "name" : "NGLGAsVS"
+  },
+  {
+    "id" : "nigeria-location-owner",
+    "type" : "ValueSet",
+    "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-location-owner",
+    "version" : "0.1.0",
+    "name" : "NGOrganizationOwnerVS"
+  },
+  {
+    "id" : "nigeria-states",
+    "type" : "ValueSet",
+    "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-states",
+    "version" : "0.1.0",
+    "name" : "NGStatesVS"
+  },
+  {
+    "id" : "nigeria-wards",
+    "type" : "ValueSet",
+    "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-wards",
+    "version" : "0.1.0",
+    "name" : "NGWardsVS"
+  }
+]

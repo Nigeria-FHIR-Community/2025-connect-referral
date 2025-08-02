@@ -1,0 +1,45 @@
+{
+  "resourceType" : "AuditEvent",
+  "id" : "audit-001",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-audit-event"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AuditEvent audit-001</b></p><a name=\"audit-001\"> </a><a name=\"hcaudit-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-audit-event.html\">NG AuditEvent</a></p></div><p><b>type</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-audit-event-type.html#audit-event-type-rest\">Audit Event ID rest</a>: RESTful Operation</p><p><b>subtype</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-restful-interaction.html#restful-interaction-read\">FHIR Restful Interactions read</a>: read</p><p><b>action</b>: Read/View/Print</p><p><b>recorded</b>: 2025-08-05 09:15:00+0100</p><p><b>outcome</b>: Success</p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-practitioner-001.html\">Practitioner Chinelo Okoye </a></td><td>true</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Site</b></td><td><b>Observer</b></td></tr><tr><td style=\"display: none\">*</td><td>Hospital EMR</td><td><a href=\"Organization/org-hospital\">Organization/org-hospital</a></td></tr></table><h3>Entities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>What</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationRequest/example-medication-request\">MedicationRequest/example-medication-request</a></td><td>[not stated] 2: System Object</td></tr></table></div>"
+  },
+  "type" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
+    "code" : "rest",
+    "display" : "RESTful Operation"
+  },
+  "subtype" : [{
+    "system" : "http://hl7.org/fhir/restful-interaction",
+    "code" : "read",
+    "display" : "read"
+  }],
+  "action" : "R",
+  "recorded" : "2025-08-05T09:15:00+01:00",
+  "outcome" : "0",
+  "agent" : [{
+    "who" : {
+      "reference" : "Practitioner/practitioner-001"
+    },
+    "requestor" : true
+  }],
+  "source" : {
+    "site" : "Hospital EMR",
+    "observer" : {
+      "reference" : "Organization/org-hospital"
+    }
+  },
+  "entity" : [{
+    "what" : {
+      "reference" : "MedicationRequest/example-medication-request"
+    },
+    "type" : {
+      "code" : "2",
+      "display" : "System Object"
+    }
+  }]
+}

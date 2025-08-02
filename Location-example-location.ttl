@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Location/example-location> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-location"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-location"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location example-location</b></p><a name=\"example-location\"> </a><a name=\"hcexample-location\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-location.html\">NG Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Gwagwalada Community clinic</p><p><b>description</b>: Primary community clinic branch serving Gwagwalada area</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode PHARM}\">clinic</span></p><p><b>address</b>: Plot 10 Zuba Road Gwagwalada FCT NG </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Gwagwalada Community clinic"] ; # 
+  fhir:description [ fhir:v "Primary community clinic branch serving Gwagwalada area"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PHARM" ] ;
+       fhir:display [ fhir:v "clinic" ]
+     ] )
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "Plot 10 Zuba Road" ] ) ;
+     fhir:city [ fhir:v "Gwagwalada" ] ;
+     fhir:district [ fhir:v "gwagwalada" ] ;
+     fhir:state [ fhir:v "FCT" ] ;
+     fhir:country [ fhir:v "NG" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

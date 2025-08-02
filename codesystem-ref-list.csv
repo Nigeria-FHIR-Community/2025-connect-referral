@@ -1,0 +1,8 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type,0.1.0,active,,NGFacilityTypeCS,NG-Imm Facility Type CS,"A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role.","ValueSet/nigeria-facility-types"
+https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender,0.1.0,active,,NGGenderCS,NG-Imm Gender CS,"The administrative gender of a person.","ValueSet/nigeria-gender"
+https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages,0.1.0,active,,NGLanguagesCS,NG‑Imm Languages in Nigeria CS,"This CodeSystem defines codes for major languages spoken across Nigeria.","ValueSet/nigeria-languages"
+https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas,0.1.0,active,,NGLGAsCS,NG-Imm LGAs in Nigeria CS,"This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria.","ValueSet/nigeria-lgas"
+https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs,0.1.0,draft,,NGOrganizationOwnerCS,NG-Imm Location Owner CS,"This CodeSystem defines Immunization Location Owner.","ValueSet/nigeria-location-owner"
+https://dhin.org/2025Connectathon/CodeSystem/nigeria-states,0.1.0,active,,NGStatesCS,NG-Imm States in Nigeria CS,"This CodeSystem defines ward codes and names mapped to their respective States in Nigeria.","ValueSet/nigeria-states"
+https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards,0.1.0,active,,NGWardsCS,NG-Imm Administrative Wards CS,"This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria.","ValueSet/nigeria-wards"

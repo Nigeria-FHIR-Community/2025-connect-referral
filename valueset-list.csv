@@ -1,0 +1,8 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types,0.1.0,active,,NGFacilityTypeVS,NG-Imm HealthFacility Type VS,"Classification of Nigerian health facilities",,"Internal"
+https://dhin.org/2025Connectathon/ValueSet/nigeria-gender,0.1.0,draft,,NGGenderVS,NG-Imm Gender or Sex VS,"Subset of HL7 administrative-gender limited to 'male' and 'female'.",,"Internal"
+https://dhin.org/2025Connectathon/ValueSet/nigeria-languages,0.1.0,active,,NGLanguagesVS,NG-Imm Languages VS,"The Patient's preferred language for communication.",,"Internal"
+https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas,0.1.0,active,,NGLGAsVS,NG-Imm LGAs VS,"The administrative Local Government Areas where a person or a facility is.",,"Internal"
+https://dhin.org/2025Connectathon/ValueSet/nigeria-location-owner,0.1.0,active,,NGOrganizationOwnerVS,NG-Imm Location Owner,"The owner of an Immunization location",,"Internal"
+https://dhin.org/2025Connectathon/ValueSet/nigeria-states,0.1.0,active,,NGStatesVS,NG-Imm States VS,"The state where a person or a facility is.",,"Internal"
+https://dhin.org/2025Connectathon/ValueSet/nigeria-wards,0.1.0,active,,NGWardsVS,NG-Imm Wards VS,"The administrative Ward (within an LGA) where a person or a facility is.",,"Internal"

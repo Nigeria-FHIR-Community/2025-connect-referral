@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nigeria-gender"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem nigeria-gender</b></p><a name="nigeria-gender"> </a><a name="hcnigeria-gender"> </a><p>This  code system <code>https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">male<a name="nigeria-gender-male"> </a></td><td>Client is of the male gender</td></tr><tr><td style="white-space:nowrap">female<a name="nigeria-gender-female"> </a></td><td>Client is of the female gender</td></tr></table></div>
+  </text>
+  <url value="https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender"/>
+  <version value="0.1.0"/>
+  <name value="NGGenderCS"/>
+  <title value="NG-Imm Gender CS"/>
+  <status value="active"/>
+  <date value="2025-08-02T13:44:47+01:00"/>
+  <publisher value="https://www.dhin-hie.org"/>
+  <contact>
+    <name value="https://www.dhin-hie.org"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.dhin-hie.org/IGs"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@dhin-hie.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Digital Health Interoperability Network (DHIN)."/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@dhin-hie.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The administrative gender of a person."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NG"/>
+      <display value="Nigeria"/>
+    </coding>
+  </jurisdiction>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="male"/>
+    <display value="male"/>
+    <definition value="Client is of the male gender"/>
+    <designation>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
+        <code value="display"/>
+      </use>
+      <value value="male"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="female"/>
+    <display value="female"/>
+    <definition value="Client is of the female gender"/>
+    <designation>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/designation-usage"/>
+        <code value="display"/>
+      </use>
+      <value value="female"/>
+    </designation>
+  </concept>
+</CodeSystem>

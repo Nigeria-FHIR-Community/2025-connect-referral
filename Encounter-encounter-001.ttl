@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Encounter/encounter-001> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "encounter-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-prescription-encounter"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-prescription-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-001</b></p><a name=\"encounter-001\"> </a><a name=\"hcencounter-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-prescription-encounter.html\">NG Encounter</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>subject</b>: <a href=\"Patient-patient-001.html\">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</a></p><p><b>period</b>: 2025-08-04 09:00:00+0100 --&gt; 2025-08-04 09:20:00+0100</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 65363002}\">Otitis media</span></p><p><b>serviceProvider</b>: <code>NgOrganization/org-hospital</code></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/Patient/patient-001> ;
+     fhir:reference [ fhir:v "Patient/patient-001" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-08-04T09:00:00+01:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-08-04T09:20:00+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:65363002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65363002" ] ;
+       fhir:display [ fhir:v "Otitis media" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://dhin.org/2025Connectathon/NgOrganization/org-hospital> ;
+     fhir:reference [ fhir:v "NgOrganization/org-hospital" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

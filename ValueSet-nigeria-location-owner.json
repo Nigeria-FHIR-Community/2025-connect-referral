@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nigeria-location-owner",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-location-owner</b></p><a name=\"nigeria-location-owner\"> </a><a name=\"hcnigeria-location-owner\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-location-owner-cs.html\"><code>https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs</code></a></li></ul></div>"
+  },
+  "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-location-owner",
+  "version" : "0.1.0",
+  "name" : "NGOrganizationOwnerVS",
+  "title" : "NG-Imm Location Owner",
+  "status" : "active",
+  "date" : "2025-08-02T13:44:47+01:00",
+  "publisher" : "https://www.dhin-hie.org",
+  "contact" : [{
+    "name" : "https://www.dhin-hie.org",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.dhin-hie.org/IGs"
+    },
+    {
+      "system" : "email",
+      "value" : "info@dhin-hie.org"
+    }]
+  },
+  {
+    "name" : "Digital Health Interoperability Network (DHIN).",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@dhin-hie.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "The owner of an Immunization location",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs"
+    }]
+  }
+}

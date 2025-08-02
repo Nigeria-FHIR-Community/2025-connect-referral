@@ -1,0 +1,77 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGFacilityTypeVS",
+      "title" : "NG-Imm HealthFacility Type VS",
+      "description" : "Classification of Nigerian health facilities",
+      "systems" : [
+        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type"
+      ]
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-gender",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "NGGenderVS",
+      "title" : "NG-Imm Gender or Sex VS",
+      "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
+      "systems" : [
+        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender"
+      ]
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-languages",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGLanguagesVS",
+      "title" : "NG-Imm Languages VS",
+      "description" : "The Patient's preferred language for communication.",
+      "systems" : [
+        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages"
+      ]
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGLGAsVS",
+      "title" : "NG-Imm LGAs VS",
+      "description" : "The administrative Local Government Areas where a person or a facility is.",
+      "systems" : ["https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas"]
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-location-owner",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGOrganizationOwnerVS",
+      "title" : "NG-Imm Location Owner",
+      "description" : "The owner of an Immunization location",
+      "systems" : [
+        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs"
+      ]
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-states",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGStatesVS",
+      "title" : "NG-Imm States VS",
+      "description" : "The state where a person or a facility is.",
+      "systems" : [
+        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-states"
+      ]
+    },
+    {
+      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-wards",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "NGWardsVS",
+      "title" : "NG-Imm Wards VS",
+      "description" : "The administrative Ward (within an LGA) where a person or a facility is.",
+      "systems" : ["https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards"]
+    }
+  ]
+}

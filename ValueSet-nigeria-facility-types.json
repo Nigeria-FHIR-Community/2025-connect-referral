@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "nigeria-facility-types",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-facility-types</b></p><a name=\"nigeria-facility-types\"> </a><a name=\"hcnigeria-facility-types\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-facility-type.html\"><code>https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type</code></a></li></ul></div>"
+  },
+  "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types",
+  "version" : "0.1.0",
+  "name" : "NGFacilityTypeVS",
+  "title" : "NG-Imm HealthFacility Type VS",
+  "status" : "active",
+  "date" : "2025-08-02T13:44:47+01:00",
+  "publisher" : "https://www.dhin-hie.org",
+  "contact" : [{
+    "name" : "https://www.dhin-hie.org",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.dhin-hie.org/IGs"
+    },
+    {
+      "system" : "email",
+      "value" : "info@dhin-hie.org"
+    }]
+  },
+  {
+    "name" : "Digital Health Interoperability Network (DHIN).",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@dhin-hie.org",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Classification of Nigerian health facilities",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NG",
+      "display" : "Nigeria"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type"
+    }]
+  }
+}

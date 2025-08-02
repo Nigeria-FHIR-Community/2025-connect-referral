@@ -1,0 +1,29 @@
+{
+  "resourceType" : "CommunicationRequest",
+  "id" : "communicationrequest-001",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-communication-request"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CommunicationRequest communicationrequest-001</b></p><a name=\"communicationrequest-001\"> </a><a name=\"hccommunicationrequest-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-communication-request.html\">NG CommunicationRequest</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <code>NgPatient/patient-mnch-0010</code></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Please receive the patient for further monitoring and specialist care due to hypertension in pregnancy.</td></tr></table><p><b>occurrence</b>: 2025-08-02 09:00:00+0100</p><p><b>authoredOn</b>: 2025-08-01</p><p><b>requester</b>: <code>NgPractitioner/practitioner-0120</code></p><p><b>recipient</b>: <code>NgOrganization/secondary-facility</code></p><p><b>reasonCode</b>: <span title=\"Codes:\">Referral for management of high-risk pregnancy</span></p></div>"
+  },
+  "status" : "active",
+  "subject" : {
+    "reference" : "NgPatient/patient-mnch-0010"
+  },
+  "payload" : [{
+    "contentString" : "Please receive the patient for further monitoring and specialist care due to hypertension in pregnancy."
+  }],
+  "occurrenceDateTime" : "2025-08-02T09:00:00+01:00",
+  "authoredOn" : "2025-08-01",
+  "requester" : {
+    "reference" : "NgPractitioner/practitioner-0120"
+  },
+  "recipient" : [{
+    "reference" : "NgOrganization/secondary-facility"
+  }],
+  "reasonCode" : [{
+    "text" : "Referral for management of high-risk pregnancy"
+  }]
+}

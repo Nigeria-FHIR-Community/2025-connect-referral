@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="carePlan-001"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan carePlan-001</b></p><a name="carePlan-001"> </a><a name="hccarePlan-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-referral-careplan.html">NG Referral CarePlan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/care-plan-category assess-plan}">assess-plan</span></p><p><b>title</b>: Referral for High-Risk ANC Monitoring</p><p><b>description</b>: This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria.</p><p><b>subject</b>: <code>NgPatient/patient-mnch-001</code></p><p><b>period</b>: 2025-08-01 --&gt; 2025-09-15</p><p><b>created</b>: 2025-08-01</p><p><b>author</b>: <code>NgPractitioner/practitioner-012</code></p><p><b>goal</b>: <a href="Goal/anc-bp-goal">Goal/anc-bp-goal</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>Appointment</td><td>Scheduled</td><td>Follow-up appointment with obstetrician at secondary facility on 2025-08-05</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>ServiceRequest</td><td>Not Started</td><td>Request for renal function test and repeat urine protein analysis</td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="plan"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/care-plan-category"/>
+      <code value="assess-plan"/>
+    </coding>
+  </category>
+  <title value="Referral for High-Risk ANC Monitoring"/>
+  <description value="This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria."/>
+  <subject>
+    <reference value="NgPatient/patient-mnch-001"/>
+  </subject>
+  <period>
+    <start value="2025-08-01"/>
+    <end value="2025-09-15"/>
+  </period>
+  <created value="2025-08-01"/>
+  <author>
+    <reference value="NgPractitioner/practitioner-012"/>
+  </author>
+  <goal>
+    <reference value="Goal/anc-bp-goal"/>
+  </goal>
+  <activity>
+    <detail>
+      <kind value="Appointment"/>
+      <status value="scheduled"/>
+      <description value="Follow-up appointment with obstetrician at secondary facility on 2025-08-05"/>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <kind value="ServiceRequest"/>
+      <status value="not-started"/>
+      <description value="Request for renal function test and repeat urine protein analysis"/>
+    </detail>
+  </activity>
+</CarePlan>

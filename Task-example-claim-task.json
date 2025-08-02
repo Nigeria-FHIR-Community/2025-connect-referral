@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Task",
+  "id" : "example-claim-task",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task example-claim-task</b></p><a name=\"example-claim-task\"> </a><a name=\"hcexample-claim-task\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-task.html\">NG Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:\">Dispense prescribed medication</span></p><p><b>description</b>: Pharmacist to dispense Amoxicillin 250mg for 7 days as prescribed</p><p><b>for</b>: <a href=\"MedicationRequest/example-medication-request\">MedicationRequest/example-medication-request</a></p><p><b>executionPeriod</b>: 2025-08-05 09:30:00+0100 --&gt; (ongoing)</p><p><b>requester</b>: <a href=\"Organization/org-hospital\">Organization/org-hospital</a></p><p><b>owner</b>: <a href=\"Practitioner/pharmacist-001\">Practitioner/pharmacist-001</a></p></div>"
+  },
+  "status" : "requested",
+  "intent" : "order",
+  "code" : {
+    "text" : "Dispense prescribed medication"
+  },
+  "description" : "Pharmacist to dispense Amoxicillin 250mg for 7 days as prescribed",
+  "for" : {
+    "reference" : "MedicationRequest/example-medication-request"
+  },
+  "executionPeriod" : {
+    "start" : "2025-08-05T09:30:00+01:00"
+  },
+  "requester" : {
+    "reference" : "Organization/org-hospital"
+  },
+  "owner" : {
+    "reference" : "Practitioner/pharmacist-001"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Organization",
+  "id" : "organization-sender",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization organization-sender</b></p><a name=\"organization-sender\"> </a><a name=\"hcorganization-sender\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://fmoh.gov.ng</code>/LUTH001</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Lagos University Teaching Hospital</p><p><b>telecom</b>: <a href=\"tel:+234-8030000001\">+234-8030000001</a></p><p><b>address</b>: Idi-Araba, Surulere Lagos lagos </p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fmoh.gov.ng",
+    "value" : "LUTH001"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "prov",
+      "display" : "Healthcare Provider"
+    }]
+  }],
+  "name" : "Lagos University Teaching Hospital",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+234-8030000001"
+  }],
+  "address" : [{
+    "line" : ["Idi-Araba, Surulere"],
+    "city" : "Lagos",
+    "district" : "surulere",
+    "state" : "lagos"
+  }]
+}

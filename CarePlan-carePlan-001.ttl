@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/CarePlan/carePlan-001> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "carePlan-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-careplan"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-careplan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan carePlan-001</b></p><a name=\"carePlan-001\"> </a><a name=\"hccarePlan-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-referral-careplan.html\">NG Referral CarePlan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/care-plan-category assess-plan}\">assess-plan</span></p><p><b>title</b>: Referral for High-Risk ANC Monitoring</p><p><b>description</b>: This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria.</p><p><b>subject</b>: <code>NgPatient/patient-mnch-001</code></p><p><b>period</b>: 2025-08-01 --&gt; 2025-09-15</p><p><b>created</b>: 2025-08-01</p><p><b>author</b>: <code>NgPractitioner/practitioner-012</code></p><p><b>goal</b>: <a href=\"Goal/anc-bp-goal\">Goal/anc-bp-goal</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>Appointment</td><td>Scheduled</td><td>Follow-up appointment with obstetrician at secondary facility on 2025-08-05</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>ServiceRequest</td><td>Not Started</td><td>Request for renal function test and repeat urine protein analysis</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/care-plan-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "assess-plan" ]
+     ] )
+  ] ) ; # 
+  fhir:title [ fhir:v "Referral for High-Risk ANC Monitoring"] ; # 
+  fhir:description [ fhir:v "This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria."] ; # 
+  fhir:subject [
+     fhir:link <https://dhin.org/2025Connectathon/NgPatient/patient-mnch-001> ;
+     fhir:reference [ fhir:v "NgPatient/patient-mnch-001" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-08-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-09-15"^^xsd:date ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-08-01"^^xsd:date] ; # 
+  fhir:author [
+     fhir:link <https://dhin.org/2025Connectathon/NgPractitioner/practitioner-012> ;
+     fhir:reference [ fhir:v "NgPractitioner/practitioner-012" ]
+  ] ; # 
+  fhir:goal ( [
+     fhir:link <https://dhin.org/2025Connectathon/Goal/anc-bp-goal> ;
+     fhir:reference [ fhir:v "Goal/anc-bp-goal" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:status [ fhir:v "scheduled" ] ;
+       fhir:description [ fhir:v "Follow-up appointment with obstetrician at secondary facility on 2025-08-05" ]
+     ]
+  ] [
+     fhir:detail [
+       fhir:kind [ fhir:v "ServiceRequest" ] ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:description [ fhir:v "Request for renal function test and repeat urine protein analysis" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

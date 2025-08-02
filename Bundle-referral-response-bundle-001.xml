@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="referral-response-bundle-001"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-referral-response"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="urn:uuid:patient-001"/>
+    <resource>
+      <Patient>
+        <id value="patient-001"/>
+        <meta>
+          <lastUpdated value="2025-07-30T10:20:00+01:00"/>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-001"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-001</b></p><a name="patient-001"> </a><a name="hcpatient-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2025-07-30 10:20:00+0100</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPatient.html">NG Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">23 Market Road Nsukka Enugu </td></tr><tr><td style="background-color: #f3f5da" title="Language spoken">Language:</td><td colspan="3"><span title="Codes:{urn:ietf:bcp:47 ig}">Igbo</span></td></tr><tr><td style="background-color: #f3f5da" title="Patient contact">Contact:</td><td colspan="3"><ul><li>Ngozi Okoro </li><li>23 Market Road Nsukka Enugu </li><li><a href="tel:+2348123456789">+2348123456789</a></li></ul></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://nimc.gov.ng"/>
+          <value value="NIN123456789"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Okoro"/>
+          <given value="Chinedu"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1990-06-15"/>
+        <address>
+          <line value="23 Market Road"/>
+          <city value="Nsukka"/>
+          <district value="nsukka"/>
+          <state value="Enugu"/>
+        </address>
+        <contact>
+          <name>
+            <family value="Okoro"/>
+            <given value="Ngozi"/>
+          </name>
+          <telecom>
+            <system value="phone"/>
+            <value value="+2348123456789"/>
+          </telecom>
+          <address>
+            <line value="23 Market Road"/>
+            <city value="Nsukka"/>
+            <district value="nsukka"/>
+            <state value="Enugu"/>
+          </address>
+        </contact>
+        <communication>
+          <language>
+            <coding>
+              <system value="urn:ietf:bcp:47"/>
+              <code value="ig"/>
+              <display value="Igbo"/>
+            </coding>
+          </language>
+        </communication>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:communication-001"/>
+    <resource>
+      <Communication>
+        <id value="communication-001"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-communication"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Communication_communication-001"> </a><p class="res-header-id"><b>Generated Narrative: Communication communication-001</b></p><a name="communication-001"> </a><a name="hccommunication-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-communication.html">NG Communication</a></p></div><p><b>status</b>: Completed</p><p><b>medium</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationMode WRITTEN}">written</span></p><p><b>subject</b>: <code>patient-001</code></p><p><b>sent</b>: 2025-08-05 11:00:00+0100</p><p><b>received</b>: 2025-08-05 11:03:00+0100</p><p><b>recipient</b>: <code>practitioner-001</code></p><p><b>sender</b>: <code>pharmacist-001</code></p><h3>Payloads</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Content[x]</b></td></tr><tr><td style="display: none">*</td><td>Kindly confirm dosage frequency for Amoxicillin prescription before dispensing.</td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <medium>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"/>
+            <code value="WRITTEN"/>
+            <display value="written"/>
+          </coding>
+        </medium>
+        <subject>
+          <reference value="patient-001"/>
+        </subject>
+        <sent value="2025-08-05T11:00:00+01:00"/>
+        <received value="2025-08-05T11:03:00+01:00"/>
+        <recipient>
+          <reference value="practitioner-001"/>
+        </recipient>
+        <sender>
+          <reference value="pharmacist-001"/>
+        </sender>
+        <payload>
+          <contentString value="Kindly confirm dosage frequency for Amoxicillin prescription before dispensing."/>
+        </payload>
+      </Communication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:careplan-001"/>
+    <resource>
+      <CarePlan>
+        <id value="carePlan-001"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-careplan"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="CarePlan_carePlan-001"> </a><p class="res-header-id"><b>Generated Narrative: CarePlan carePlan-001</b></p><a name="carePlan-001"> </a><a name="hccarePlan-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-referral-careplan.html">NG Referral CarePlan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/care-plan-category assess-plan}">assess-plan</span></p><p><b>title</b>: Referral for High-Risk ANC Monitoring</p><p><b>description</b>: This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria.</p><p><b>subject</b>: <code>NgPatient/patient-mnch-001</code></p><p><b>period</b>: 2025-08-01 --&gt; 2025-09-15</p><p><b>created</b>: 2025-08-01</p><p><b>author</b>: <code>NgPractitioner/practitioner-012</code></p><p><b>goal</b>: <a href="Goal/anc-bp-goal">Goal/anc-bp-goal</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>Appointment</td><td>Scheduled</td><td>Follow-up appointment with obstetrician at secondary facility on 2025-08-05</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Kind</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>ServiceRequest</td><td>Not Started</td><td>Request for renal function test and repeat urine protein analysis</td></tr></table></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <category>
+          <coding>
+            <system value="http://hl7.org/fhir/care-plan-category"/>
+            <code value="assess-plan"/>
+          </coding>
+        </category>
+        <title value="Referral for High-Risk ANC Monitoring"/>
+        <description value="This care plan outlines scheduled follow-up and tests for a patient referred due to elevated blood pressure and proteinuria."/>
+        <subject>
+          <reference value="NgPatient/patient-mnch-001"/>
+        </subject>
+        <period>
+          <start value="2025-08-01"/>
+          <end value="2025-09-15"/>
+        </period>
+        <created value="2025-08-01"/>
+        <author>
+          <reference value="NgPractitioner/practitioner-012"/>
+        </author>
+        <goal>
+          <reference value="Goal/anc-bp-goal"/>
+        </goal>
+        <activity>
+          <detail>
+            <kind value="Appointment"/>
+            <status value="scheduled"/>
+            <description value="Follow-up appointment with obstetrician at secondary facility on 2025-08-05"/>
+          </detail>
+        </activity>
+        <activity>
+          <detail>
+            <kind value="ServiceRequest"/>
+            <status value="not-started"/>
+            <description value="Request for renal function test and repeat urine protein analysis"/>
+          </detail>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:condition-0018"/>
+    <resource>
+      <Condition>
+        <id value="condition-001"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_condition-001"> </a><p class="res-header-id"><b>Generated Narrative: Condition condition-001</b></p><a name="condition-001"> </a><a name="hccondition-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-condition.html">NG Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 65363002}">Otitis media</span></p><p><b>subject</b>: <code>NgPatient/patient-0011</code></p><p><b>onset</b>: 2025-08-04</p><p><b>recordedDate</b>: 2025-08-04</p><p><b>recorder</b>: <code>NgPractitioner/practitioner-0011</code></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="encounter-diagnosis"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="65363002"/>
+            <display value="Otitis media"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="NgPatient/patient-0011"/>
+        </subject>
+        <onsetDateTime value="2025-08-04"/>
+        <recordedDate value="2025-08-04"/>
+        <recorder>
+          <reference value="NgPractitioner/practitioner-0011"/>
+        </recorder>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:observation-0018"/>
+    <resource>
+      <Observation>
+        <id value="observation-001"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-referral-observation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-001"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-001</b></p><a name="observation-001"> </a><a name="hcobservation-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-referral-observation.html">NG Referral Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 85354-9}">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <code>NgPatient/patient-mnch-001</code></p><p><b>effective</b>: 2025-08-02 09:30:00+0100</p><p><b>performer</b>: <a href="Practitioner/practitioner-012">Practitioner/practitioner-012</a></p><p><b>value</b>: 125 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation H}">High</span></p><p><b>note</b>: </p><blockquote><div><p>Elevated BP noted. Referral to hospital initiated.</p>
+</div></blockquote></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="85354-9"/>
+            <display value="Blood pressure panel with all children optional"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="NgPatient/patient-mnch-001"/>
+        </subject>
+        <effectiveDateTime value="2025-08-02T09:30:00+01:00"/>
+        <performer>
+          <reference value="Practitioner/practitioner-012"/>
+        </performer>
+        <valueQuantity>
+          <value value="125"/>
+          <unit value="mmHg"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="mm[Hg]"/>
+        </valueQuantity>
+        <interpretation>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+            <code value="H"/>
+            <display value="High"/>
+          </coding>
+        </interpretation>
+        <note>
+          <text value="Elevated BP noted. Referral to hospital initiated."/>
+        </note>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:encounter-001"/>
+    <resource>
+      <Encounter>
+        <id value="encounter-001"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-prescription-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-001"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-001</b></p><a name="encounter-001"> </a><a name="hcencounter-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-prescription-encounter.html">NG Encounter</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode AMB</a>: ambulatory</p><p><b>subject</b>: <a href="Patient-patient-001.html">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</a></p><p><b>period</b>: 2025-08-04 09:00:00+0100 --&gt; 2025-08-04 09:20:00+0100</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 65363002}">Otitis media</span></p><p><b>serviceProvider</b>: <code>NgOrganization/org-hospital</code></p></div>
+        </text>
+        <status value="finished"/>
+        <class>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+          <code value="AMB"/>
+          <display value="ambulatory"/>
+        </class>
+        <subject>
+          <reference value="Patient/patient-001"/>
+        </subject>
+        <period>
+          <start value="2025-08-04T09:00:00+01:00"/>
+          <end value="2025-08-04T09:20:00+01:00"/>
+        </period>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="65363002"/>
+            <display value="Otitis media"/>
+          </coding>
+        </reasonCode>
+        <serviceProvider>
+          <reference value="NgOrganization/org-hospital"/>
+        </serviceProvider>
+      </Encounter>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:practitioner-001"/>
+    <resource>
+      <Practitioner>
+        <id value="practitioner-001"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_practitioner-001"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner practitioner-001</b></p><a name="practitioner-001"> </a><a name="hcpractitioner-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPractitioner.html">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN-457812</p><p><b>active</b>: true</p><p><b>name</b>: Chinelo Okoye </p><p><b>telecom</b>: ph: 08011223344</p><p><b>birthDate</b>: 1982-03-10</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">MEDCERT-2023</span></td><td>2023-01-01 --&gt; 2028-12-31</td><td><a href="Organization-organization-001.html">Organization Sunlight Medical Center</a></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://mdcn.gov.ng"/>
+          <value value="MDCN-457812"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Okoye"/>
+          <given value="Chinelo"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="08011223344"/>
+        </telecom>
+        <birthDate value="1982-03-10"/>
+        <qualification>
+          <code>
+            <text value="MEDCERT-2023"/>
+          </code>
+          <period>
+            <start value="2023-01-01"/>
+            <end value="2028-12-31"/>
+          </period>
+          <issuer>
+            <reference value="Organization/organization-001"/>
+          </issuer>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:organization-001"/>
+    <resource>
+      <Organization>
+        <id value="organization-001"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_organization-001"> </a><p class="res-header-id"><b>Generated Narrative: Organization organization-001</b></p><a name="organization-001"> </a><a name="hcorganization-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF-0001</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Sunlight Medical Center</p><p><b>telecom</b>: <a href="tel:+2348012345678">+2348012345678</a></p><p><b>address</b>: 12 Ikoyi Crescent Lagos Lagos </p></div>
+        </text>
+        <identifier>
+          <system value="https://herfama.lagos.ng"/>
+          <value value="HF-0001"/>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="prov"/>
+            <display value="Healthcare Provider"/>
+          </coding>
+        </type>
+        <name value="Sunlight Medical Center"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="+2348012345678"/>
+        </telecom>
+        <address>
+          <line value="12 Ikoyi Crescent"/>
+          <city value="Lagos"/>
+          <district value="ikeja"/>
+          <state value="Lagos"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>
